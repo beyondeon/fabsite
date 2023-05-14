@@ -1,12 +1,23 @@
 header{
+	border: 2px solid powderblue
 	background-color:LightBlue;
-	padding:2px;
-	font-family:"futura", sans-serif;
+	padding:1px;
+
 }
 
 nav {
+	background-color:LightBlue; width:100%;
+	text-align:center;
+	padding:3px;
+
+}
+
+div{
 	border: 2px solid powderblue;
-	background-color:LightBlue; width:100%; text-align:center;
-	padding:4px;
-	font-family:futura;
+	text-align:center;
+}
+
+body{
+	background-color:Snow;
+	font-family: Trebucheet, sans-serif;
 }
