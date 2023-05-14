@@ -1,3 +1,10 @@
+header{
+	background-color:LightBlue;
+	padding:10px;
+	font:futura;
+}
+
 nav {
 	border: 2px solid powderblue;
+	background-color:LightBlue; width:70%; text-align:center;
 }
