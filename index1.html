@@ -3,12 +3,8 @@
 <head>
 <link rel="stylesheet" href="homepage.css">
 <style>
-body{
-background-image: 
-background-repeat: no-repeat;
-background-attachment: fixed;
-background size:cover;
-}
+
+
 </style>
 <title>About Page</title>
 </head>
@@ -23,17 +19,24 @@ background size:cover;
 </header>
 
 
-<!-- Navigation links -->
+<!-- Navigation bar -->
 <nav>
 
-<table style="background-color:LightBlue; width:100%; text-align:center;">
-<tr>
-<th><a href="index.html" title="To Home Page">Home</a></th>
-<th>Assignments</th>
-<th>Final Project</th>
-<th><a href="index1.html" title="To about page">About</a></th>
-</tr>
-</table>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Assignments
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Assignment 1</a>
+              <a href="#">Assignment 2</a>
+              <a href="#">Assignment 3</a>
+            </div>
+          </div>
+        <a href="#contact">Final project</a>
+        <a href="index1.html">About</a>
+      </div>
 
 </nav>
 
@@ -55,15 +58,11 @@ background size:cover;
 
 <table>
 <tr>
-<th>Image</th>
 <th>Details about Me:</th>
 </tr>
 <tr>
 <th><img src="images/fabricationpic.png" alt="Picture of Deon" width="400" height="500"></th>
 <th>Name: Deon<br>Course: Diploma in Mechanical Engineering<br>Year: 2<br>Email: <a href="mailto:deonangad.22@ichat.sp.edu.sg">Send email</a></th>
-
-
-
 
 
 </body>
