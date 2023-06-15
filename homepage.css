@@ -7,7 +7,7 @@ nav {
 
 /*navigation bar*/
 
-	/* Add a black background color to the top navigation */
+/*derived from w3school*/
 	.navbar {
 		overflow: hidden;
 		background-color: #333;
