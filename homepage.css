@@ -76,3 +76,8 @@ section{
 body{
 	font-family: Trebucheet, sans-serif;
 }
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
