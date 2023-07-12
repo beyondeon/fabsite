@@ -58,15 +58,31 @@
   <p>Then, we can start sketching. I started with a rectangle. By default, the rectangle is a 2 point one, but by using the "Create" dropdown menu, we can select different types of rectangles. We will be using the center point one here.</p>
   <img src="images/rectangle.png" alt="rectangle sketch" width="500" height="500">
   <p>For sketches, we preferably want them to be fully constrained, usually to the origin. Constraining basically "locks" the sketch, so that the sketch cannot be accidentally altered and is indicated by black lines. Hence, the center point of the rectangle is right smack at the origin. This makes it constrained.</p>
-  <p>To specify dimensions, you can key in values into the box which appears when you apply an item. For multiple values, you can use [tab] to alternate between them.</p>
+  <p>To specify dimensions, you can key in values into the box which appears when you apply an item. For multiple values, you can use [Tab] to alternate between them.</p>
   <p>We shall now add the remaining shapes.</p>
   <img src="images/circles.png" alt="circle sketch" width="500" height="500">
   <img src="images/guides.png" alt="trimmed sketch" width="500" height="500">
   <p>Here, we added some construction lines for the inner rectangle, and trimmed the rectangle and the inside of the outermost circle. Trimming the rectangle however caused the sketch to be unconstrained.</p>
-  <img src="images/complete.png" alt="complete sketch" width="950" height="500">
+  <img src="images/complete.png" alt="complete sketch" width="900" height="500">
   <p>After adding the final rectangle, we are now done with the sketch! Unfortunately, it is not constrained hence the blue lines, but I am still able to extrude the sketch. This however has the risk of causing issues further down if sudden changes are made, or as Fusion calls it, "downstream failures".</p>
   <p>In any case, this exercise is done! On to the next one!</p>
+</div>
 
+<div>
+  <h2>Exercise 2</h2>
+  <p>For this exercise, we are going to make this spanner looking model. This is where the fun begins.</p>
+  <img src="images/spanner.png" alt="spanner sketch" width="800" height="500">
+  <p>The very first step would be to make a sketch with reference to the one above.</p>
+  <img src="images/spannersketch.png" alt="spanner 360 sketch" width="900" height="500">
+  <p>This may look complicated, but by breaking down the sketch down to basic shapes and using construction lines, it is very much doable. </p>
+  <p>To break it down, the sketch first starts off with a circle with a pentagon within. Then, using a construction line, the second circle is made followed by the hexagon within. The circles are then connected with lines, and the inner shape is drawn.</p>
+  <p>Now it is time to extrude. Click on Finish Sketch, then click on "Extrude".</p>
+  <img src="images/preextrude.png" alt="pre extrusion sketch" width="900" height="500">
+  <img src="images/wrench.png" alt="extrusion" width="900" height="500">
+  <p>When extruding, a menu and a box pops up. You can edit certain settings in the menu, and you can input the value of how much you would like to extrude by using the box or the menu. Usually a face (the sketch) would already be highlighted and ready to extrude, but in some cases you will need to manually click where you would like to extrude. To select multiple faces, shift click. Once done, press [Enter] or the "OK" button in the menu to complete.</p>
+  <p>Since the schematic did not specify the height / how much to extrude by, I roughly extruded by ~10-15mm.</p>
+  <p>One final detail to note would be the fillets (curved edges) between the circles and the rectangle. You could draw them out in the sketch, but the more convenient method would be to use the Fillet command. You can specify the radius of the fillets, but in this case, since it isn't specified, we can eyeball an appropriate value.</p>
+  <p>Complete!</p>
 </div>
 </article>
 
