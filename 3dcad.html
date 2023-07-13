@@ -38,51 +38,110 @@
 
 </nav>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
 <article>
 <div>
   <h2>3D CAD</h2>
     <ul>
     <li>So what is 3D CAD? First off, CAD means "Computer Aided Drawing", and it is used to create and modify virtual models in both 3D and 2D. In this case, it would be well, 3D. </li>
     <li>So just what is it used for? For one, 3D CAD is very useful and is basically one of the fundamentals to digital fabrication (hey that's the name of the module). 3D CAD is how we produce 3D models to print via 3D printers to realise our designs.</li>
-    <li>Various software for 3D CAD exist, with some examples being Autodesk Inventor, Autodesk Fusion 360 and even Blender. For our purposes, I will be using Fusion 360 for the majority of the module.</li>
+    <li>Various software for 3D CAD exist, with some examples being Autodesk Inventor and Autodesk Fusion 360. For our purposes, I will be using Fusion 360 for the majority of the module.</li>
     <li>I have prior experience with CAD software as I am from an engineering course, namely Autodesk Inventor for 3D. However, Inventor and Fusion 360 have their own differences, so this is also a learning experience for me.</li>
     </ul>
 </div>
 
 <div>
-  <h2>Exercise 1</h2>
-  <p>For this first 3D CAD exercise, we are actually not going to make a 3D model right away. We are going to make a sketch, which is the backbone of all 3D models in CAD software. Sketches allow designers to easily define dimensions and edit the shapes of the model. Only after making a sketch then are we able to extrude them in order to create a 3D model.</p>
-  <p>We are going to sketch this in Fusion 360.</p>
-  <img src="images/sketch.png" alt="Sketch picture" width="300" height="400">
-  <p>First, we will click on the "Create Sketch" button, then select a plane to start the sketch on.</p>
-  <p>Then, we can start sketching. I started with a rectangle. By default, the rectangle is a 2 point one, but by using the "Create" dropdown menu, we can select different types of rectangles. We will be using the center point one here.</p>
-  <img src="images/rectangle.png" alt="rectangle sketch" width="500" height="500">
-  <p>For sketches, we preferably want them to be fully constrained, usually to the origin. Constraining basically "locks" the sketch, so that the sketch cannot be accidentally altered and is indicated by black lines. Hence, the center point of the rectangle is right smack at the origin. This makes it constrained.</p>
-  <p>To specify dimensions, you can key in values into the box which appears when you apply an item. For multiple values, you can use [Tab] to alternate between them.</p>
-  <p>We shall now add the remaining shapes.</p>
-  <img src="images/circles.png" alt="circle sketch" width="500" height="500">
-  <img src="images/guides.png" alt="trimmed sketch" width="500" height="500">
-  <p>Here, we added some construction lines for the inner rectangle, and trimmed the rectangle and the inside of the outermost circle. Trimming the rectangle however caused the sketch to be unconstrained.</p>
-  <img src="images/complete.png" alt="complete sketch" width="900" height="500">
-  <p>After adding the final rectangle, we are now done with the sketch! Unfortunately, it is not constrained hence the blue lines, but I am still able to extrude the sketch. This however has the risk of causing issues further down if sudden changes are made, or as Fusion calls it, "downstream failures".</p>
-  <p>In any case, this exercise is done! On to the next one!</p>
+  <h2>Exercises</h2>
+  <a href="#exercise2">Exercise 2</a>
 </div>
 
 <div>
-  <h2>Exercise 2</h2>
-  <p>For this exercise, we are going to make this spanner looking model. This is where the fun begins.</p>
+  <h2>Exercise 1</h2>
+  <p> - For this first 3D CAD exercise, we are actually not going to make a 3D model right away. We are going to make a sketch, which is the backbone of all 3D models in CAD software. Sketches allow designers to easily define dimensions and edit the shapes of the model. Only after making a sketch then are we able to extrude them in order to create a 3D model.</p>
+  <p> - We are going to sketch this in Fusion 360.</p>
+  <img src="images/sketch.png" alt="Sketch picture" width="300" height="400">
+  <p> - First, we will click on the "Create Sketch" button, then select a plane to start the sketch on.</p>
+  <p> - Then, we can start sketching. I started with a rectangle. By default, the rectangle is a 2 point one, but by using the "Create" dropdown menu, we can select different types of rectangles. We will be using the center point one here.</p>
+  <img src="images/rectangle.png" alt="rectangle sketch" width="500" height="500">
+  <p> - For sketches, we preferably want them to be fully constrained, usually to the origin. Constraining basically "locks" the sketch, so that the sketch cannot be accidentally altered and is indicated by black lines. Hence, the center point of the rectangle is right smack at the origin. This makes it constrained.</p>
+  <p> - To specify dimensions, you can key in values into the box which appears when you apply an item. For multiple values, you can use [Tab] to alternate between them.</p>
+  <p> - We shall now add the remaining shapes.</p>
+  <img src="images/circles.png" alt="circle sketch" width="500" height="500">
+  <img src="images/guides.png" alt="trimmed sketch" width="500" height="500">
+  <p> - Here, we added some construction lines for the inner rectangle, and trimmed the rectangle and the inside of the outermost circle. Trimming the rectangle however caused the sketch to be unconstrained.</p>
+  <img src="images/complete.png" alt="complete sketch" width="900" height="500">
+  <p> - After adding the final rectangle, we are now done with the sketch! Unfortunately, it is not constrained hence the blue lines, but I am still able to extrude the sketch. This however has the risk of causing issues further down if sudden changes are made, or as Fusion calls it, "downstream failures".</p>
+  <p> - In any case, this exercise is done! On to the next one!</p>
+</div>
+
+<div>
+  <h2 id="exercise2">Exercise 2</h2>
+  <p> - For this exercise, we are going to make this spanner looking model. This is where the fun begins.</p>
   <img src="images/spanner.png" alt="spanner sketch" width="800" height="500">
-  <p>The very first step would be to make a sketch with reference to the one above.</p>
+  <p> - The very first step would be to make a sketch with reference to the one above.</p>
   <img src="images/spannersketch.png" alt="spanner 360 sketch" width="900" height="500">
-  <p>This may look complicated, but by breaking down the sketch down to basic shapes and using construction lines, it is very much doable. </p>
-  <p>To break it down, the sketch first starts off with a circle with a pentagon within. Then, using a construction line, the second circle is made followed by the hexagon within. The circles are then connected with lines, and the inner shape is drawn.</p>
-  <p>Now it is time to extrude. Click on Finish Sketch, then click on "Extrude".</p>
+  <p> - This may look complicated, but by breaking down the sketch down to basic shapes and using construction lines, it is very much doable. </p>
+  <p> - To break it down, the sketch first starts off with a circle with a pentagon within. Then, using a construction line, the second circle is made followed by the hexagon within. The circles are then connected with lines, and the inner shape is drawn.</p>
+  <p> - Now it is time to extrude. Click on Finish Sketch, then click on "Extrude".</p>
   <img src="images/preextrude.png" alt="pre extrusion sketch" width="900" height="500">
   <img src="images/wrench.png" alt="extrusion" width="900" height="500">
-  <p>When extruding, a menu and a box pops up. You can edit certain settings in the menu, and you can input the value of how much you would like to extrude by using the box or the menu. Usually a face (the sketch) would already be highlighted and ready to extrude, but in some cases you will need to manually click where you would like to extrude. To select multiple faces, shift click. Once done, press [Enter] or the "OK" button in the menu to complete.</p>
-  <p>Since the schematic did not specify the height / how much to extrude by, I roughly extruded by ~10-15mm.</p>
-  <p>One final detail to note would be the fillets (curved edges) between the circles and the rectangle. You could draw them out in the sketch, but the more convenient method would be to use the Fillet command. You can specify the radius of the fillets, but in this case, since it isn't specified, we can eyeball an appropriate value.</p>
-  <p>Complete!</p>
+  <p> - When extruding, a menu and a box pops up. You can edit certain settings in the menu, and you can input the value of how much you would like to extrude by using the box or the menu. Usually a face (the sketch) would already be highlighted and ready to extrude, but in some cases you will need to manually click where you would like to extrude. To select multiple faces, shift click. Once done, press [Enter] or the "OK" button in the menu to complete.</p>
+  <p> - Since the schematic did not specify the height / how much to extrude by, I roughly extruded by ~10-15mm.</p>
+  <p> - One final detail to note would be the fillets (curved edges) between the circles and the rectangle. You could draw them out in the sketch, but the more convenient method would be to use the Fillet command. You can specify the radius of the fillets, but in this case, since it isn't specified, we can eyeball an appropriate value.</p>
+  <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99b2131ac028d70dc5?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+  <p> - Complete!</p>
+</div>
+
+<div>
+  <h2 id="exercise3">Exercise 3</h2>
+  <p> - The next thing we are going to make is a 2x4 Lego brick. This may look daunting, but thankfully there is a Youtube tutorial we can use as a reference.</p>
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/d3qGQ2utl2A" title="Day 1 of Learn Fusion 360 in 30 Days for Complete Beginners! - 2023 EDITION" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+  </iframe>
+  <p> - And here is the schematic for the brick.</p>
+  <img src="images/lego.png" alt="lego schematic" width="500" height="450">
+  <p> - As always, we start off with a sketch.</p>
+  <img src="images/legosketch.png" alt="lego sketch" width="900" height="500">
+  <p> - Then, extrude by 9.6 mm. We now have a cuboid as the base of the brick.</p>
+  <img src="images/legoextrude.png" alt="lego extrude" width="900" height="500">
+  <p> - Now, we are going to make the studs. One convenient method of making this feature would be to use the rectangular pattern command, which allows you to instantaneously draw out multiple of the same feature instead of creating each one manually.</p>
+  <img src="images/studsketch.png" alt="stud sketch" width="900" height="500">
+  <p> - Again, we extrude each one to the required height of 1.8 mm.</p>
+  <img src="images/studextrude.png" alt="stud extrude" width="900" height="500">
+  <p> - Now we need to create the insides of the brick. To do this, we are going to use the Shell feature on the bottom of the brick. This makes a solid model into an open shell, and you can specify the thickness of the shell wall as well. In this case we are going to specify it as 1.20 mm.</p>
+  <img src="images/legoshell.png" alt="shelling" width="900" height="500">
+  <p> - Now for the final feature. We are going to start a sketch on the inner surface of the brick, and sketch out concentric circles for the bottom "pins". To accurately pinpoint the center, we can use a construction line from the top studs and snap the circles to the center of the line.</p>
+  <img src="images/pinsketch.png" alt="pin sketch" width="900" height="500">
+  <p> - We shall now extrude the bottom pin, then use the Rectangular pattern function once again to create the remaining two pins from the first one.</p>
+  <img src="images/pinex1.png" alt="pin extrusion" width="900" height="500">
+  <img src="images/pinpattern.png" alt="pin pattern" width="900" height="500">
+  <p> - By right, we are technically done. But just for an extra touch, we are going to use the fillet command on the edges of the studs and the brick to create small rounded edges so that the edges aren't so sharp.</p>
+  <img src="images/finalbrick.png" alt="finished brick" width="900" height="500">
+  <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99608896ef230b7a77?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+  <p> - And we're done! This model can now be used for 3D printing and such.</p>
 </div>
 </article>
 
