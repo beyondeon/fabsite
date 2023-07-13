@@ -157,19 +157,33 @@
     <li>Name or design is 1mm from surface</li>
     <li>Base of name tag 1.5mm thick</li>
   </ul>
-  
-  <div>
-  <p> - And the end result should look something like this:</p>
-  </div>
 
+  
+  <p> - And the end result should look something like this:</p>
   <img src="images/nametag.png" alt="name tag eg" width="500" height="400">
+
+
   <p> - To start, we shall draw a rectangle and input the dimensions.</p>
-  <img src="images/nametag.png" alt="rectangle" width="500" height="400">
+  <img src="images/tag rectangle.png" alt="rectangle" width="900" height="500">
   <p> - Then, we are going to draw two circles inside, and they must be tangent to the rectangle edge.</p>
-  <img src="images/nametag.png" alt="rectangle circles" width="500" height="400">
+  <img src="images/tagcircles.png" alt="rectangle circles" width="900" height="500">
   <p> - Using the trim command, we can remove the corners of the rectangle to achieve the general shape of the name tag.</p>
-  <img src="images/nametag.png" alt="tag shape" width="500" height="400">
-  <p> - Finally, we can add the </p>
+  <img src="images/tagshape.png" alt="tag shape" width="900" height="500">
+  <p> - Finally, we can add the keyring part by drawing a circle on the end of the tag.</p>
+  <img src="images/keyring.png" alt="key ring" width="900" height="500">
+  <p> - Click on "Finish Sketch", then extrude by 2.5 mm (base of tag (1.5) + thickness of design(1))</p>
+  <p> - To create the hole, we are going to start a sketch on the surface of the tag. Using projections, we can draw a circle for the hole. (diameter (5) = big hole diameter(8) - thickness on two sides (1.5*2)) When complete, click on "Finish Sketch".</p>
+  <img src="images/tagsketch.png" alt="surface sketch" width="900" height="500">
+  <p> - Now, to create the hole, we are going to use the Hole command. Select the inner circle, and set the type of hole that you want. In this case, it is a true hole. Click "OK" when done.</p>
+  <img src="images/taghole.png" alt="hole" width="900" height="500">
+  <p> - In order to hollow the tag, we are going to use the Shell command again. Select the face you want to hollow out, and input the wall thickness (for this model, 1.5 mm)</p>
+  <img src="images/shelltag.png" alt="hollow" width="900" height="500">
+  <p> - For us to include text in our design, we can use the Text function. This allows us to type words on the model and extrude them as features on the model. Select a face you're going to type on, then type and resize accordingly as you see fit.</p>
+  <img src="images/tagname.png" alt="name" width="900" height="500">
+  <p> - The last step would be to extrude our name. Using the Extrude tool, select your name and input the height to extrude by. Once that is done, the model is complete!</p>
+  <img src="images/completetag.png" alt="finished" width="900" height="500">
+  <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c996ace199f42f3296f?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+  
 </div>
 </article>
 
