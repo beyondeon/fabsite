@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedded Programming</title>
+<link rel="stylesheet" href="homepage.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<html lang="en-UK">
+<body>
+
+<header>
+        <h3><b>Deon's Fabrication Site</b></h3>
+        <h1 style="text-align:center;">Embedded Programming</h1>    
+</header>  
+
+<nav>
+
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href= "fablab.html">Fablab Safety</a>
+      <div class="dropdown">
+          <button class="dropbtn">Topics
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="webpage.html">Website Creation with Github</a>
+            <a href="2dcad.html">2D CAD</a>
+            <a href="3dcad.html">3D CAD</a>
+            <a href="lasercut.html">Laser Cutting</a>
+            <a href="3dprint.html">3D Printing</a>
+            <a href="embed.html">Embed Programming</a>
+          </div>
+        </div>
+      <a href="final.html">Final project</a>
+      <a href="about.html">About</a>
+    </div>
+  
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<article>
+    <div>
+        <h2>Embedded Programming</h2>
+        <ul>
+         <li>We have come to the last topic of the module. So, what is Embedded Programming? Simply put, embeddded programming is a form of coding / programming that is intended for, well, embedded systems. A common example of an embedded system would be the Arduino, which is coincidentally the microcontroller we will be using for the projects.</li>
+         <li>With embedded programming, we can code in commands and execute them on a controller, allowing it to carry out all kinds of functions depending on what modules are affixed.</li>
+         <li>The main form of code we use in Arduino is going to be C++, one of the many coding languages out there.</li>
+         <li>What we are going to use to simulate is TinkerCAD, which allows us to arrange components as well as execute code on the virtual Arduino.</li>
+        </ul>
+    </div>
+
+    <div>
+     <h3>Assignment Task 1</h3>
+     <p> - The assignment is split into tasks, each one slowly increasing in complexity. You can view the code by clicking on the Code button, and try out the simulation by clicking "Start Simulation"</p>
+     <p> -These are the conditions for Task 1:</p>
+     <ol>
+        <li>Connect an LED with a current limiting resistor of 220 ohms to Port 6 of the Arduino.</li>
+        <li>Write a program to blink the LED in a pattern.</li>
+     </ol>
+     <iframe width="725" height="453" src="https://www.tinkercad.com/embed/kStzlCMJVfg?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+     <p> - This program makes the LED blink once, twice, then thrice before looping.</p>
+    </div>
+
+    <div>
+     <h3>Assignment Task 2</h3>
+     <p> -These are the conditions for Task 2:</p>
+     <ol>
+        <li>Using the same techniques, connect 3 LEDs of different colours to the board using pins 6, 7, 8.</li>
+        <li>Write a program to light up the LEDS in sequence (Red, Green, Blue, then loop)</li>
+     </ol>
+     <iframe width="725" height="453" src="https://www.tinkercad.com/embed/b6xWz8gwK7S?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+     <p> - This program here lights up the LEDs in order, starting from Red all the way to Blue before turning them off in the same sequence and looping.</p>
+    </div>
+
+    <div>
+        <h3>Assignment Task 3</h3>
+        <p> -These are the conditions for Task 3:</p>
+     <ol>
+        <li>Add a button to the circuit in Task 1 (You should use a pull-up resistor of 10k ohms if operating in INPUT mode)</li>
+        <li>Write a program that when the button is pressed, the LED turns on and when it is pressed again, it turns off.</li>
+     </ol>
+     <iframe width="725" height="453" src="https://www.tinkercad.com/embed/gXmdTUGsPk4?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+     <p> - This code does just what is meant to do, turn an LED on and off when a button is pressed.</p>
+     <p> - The code implements a toggle latch into the button.</p>
+    </div>
+
+    <div>
+        <h3>Assignment Task 4</h3>
+        <p> -These are the conditions for Task 3:</p>
+        <ul>
+           <li>Use the button in Task 3 to control the type of light up and flashing of the LEDs, for example:</li>
+        </ul>
+        <ol>
+            <li>Start with all LEDs turned off</li>
+            <li>Pressing the button again only turns on the Red LED</li>
+            <li>Pressing the button again only turns on the Green LED</li>
+            <li>Pressing the button again only turns on the Blue LED</li>
+            <li>Pressing the button again turns on all the LEDs</li>
+            <li>Pressing the button again turns off all the LEDs, returning to the first state.</li>
+        </ol>
+        <iframe width="725" height="453" src="https://www.tinkercad.com/embed/6FSjheiNFlX?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+        <p>This code has a slight bug, where by you need to click the button twice to change the light states, and you also need to spam click the button to loop the sequence.</p>
+    </div>
+</article>
+
+<footer>
+    <div>
+    <p style="text-align:center; background-color:LightBlue; padding:30px;"> Copyright Deon Fabrication 2023©</p>
+    </div>
+</footer>
+
+</body>
+</html>
