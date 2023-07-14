@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Deon's Fabrication Site</title>
+<link rel="stylesheet" href="homepage.css">
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<html lang="en-UK">
+<body>
+
+<header>
+<h3><b>Deon's Fabrication Site</b></h3>
+<h1 style="text-align:center;">3D Printing</h1>
+</header>
+
+
+<nav>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href= "#">Fablab Safety</a>
+    <div class="dropdown">
+        <button class="dropbtn">Topics
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="webpage.html">Website Creation with Github</a>
+          <a href="#">2D CAD</a>
+          <a href="3dcad.html">3D CAD</a>
+          <a href="#">Laser Cutting</a>
+          <a href="3dprint.html">3D Printing</a>
+          <a href="#">Embed Programming</a>
+        </div>
+      </div>
+    <a href="#contact">Final project</a>
+    <a href="about.html">About</a>
+  </div>
+
+</nav>
+
+<article>
+<div>
+<h2>3D printing</h2>
+<ul>
+    <li style="margin-bottom:8px;">What is 3D printing? Simply put, 3D printing, also known as Additive Manufacturing, is a form of manufacturing which can produce 3-dimensional objects from a digital 3D model.</li>
+    <li style="margin-bottom:8px;">How does it work? Well, 3D printing, as its other name suggests, creates models by adding or depositing material layer by layer. This can be done using different methods, ranging from the use of extruding filament to curing resin. Filament printers are one of the most common forms of 3D printers used.</li>
+</ul>
+</div>
+
+<div>
+    <h2>Assignment 1</h2>
+    <p> - 3D printing a handphone stand</p>
+    <p> - For this assignment, we are required to design a phone stand. In terms of design, wanted something that is slightly more unique that is unlike the usual blocks that are phone stands.</p>
+    <p> - The design phase was a bit of a challenge. Since I basically rejected the idea of a block as a stand, I needed another shape that can serve the same purpose. After trying to look for inspiration, I got inspired by a very unlikely source, my grandparents' chairs.</p>
+    <p> - Yes, chairs. Granted, it isn't as original per se since chair shaped stands exist but I'd figured that it was unique enough.</p>
+    
+    <h3>Designing</h3>
+    <p> - To get a clear idea of what we want, we are going to sketch out the general concept on paper and work from there.</p>
+    <p> - Attached below is a basic sketch of the design. The general premise of the design is a folding / adjustable chair similar to a lawn chair, sans the handrests since we are also going to mount the phone horizontally.</p>
+    <img src="images/chairsketch.jpeg" alt="chair draft" width="600" height="450">
+    <p> - The idea is further improved after looking at more foldable chairs, and I eventually settled on the concept of a beach chair.</p>
+    <p> - The reference I used from the internet:</p>
+    <img src="images/beachchair.jpg" alt="chair ref" width="500" height="450">
+    <p> - An intended feature was to "replicate" the fabric portion of the chair with a 3D printed living hinge, but I eventually scrapped the idea when the print failed.</p>
+    
+    <h3>Modelling</h3>
+    <p> - As always, we are going to start modelling in Fusion. One feature we are going to use is "components", where we can work on each part separately.</p>
+    <p> - After modelling each component, we can now prepare the model for printing. Using the "Arrange" feature we used in the Laser Cutting assignment, we can lay the components flat for printing, then assemble the parts together once printed.</p>
+    <img src="images/chairmodel.png" alt="chair ref" width="900" height="450">
+    <img src="images/chairarrange.png" alt="chair ref" width="900" height="450">
+    <p> - This is the second rendition of the model. The first rendition had ball joints for assembly, but unfortunately did not work as some sockets were covered or caved in. I ended up redesigning the joints to simple peg-and-hole ones, and it proved effective enough once printed.</p>
+    
+    <h3>Printing</h3>
+    <p> - Using a slicer, namely Cura, we are able to slice our model into layers for printing. Here in the slicer, we are also able to configure the settings of the printer.</p>
+    <img src="images/slicer.png" alt="cura" width="900" height="450">
+    <p> - After slicing, we are now able to transfer the G-code to the SD card of the printer. After inserting the card and selecting the correct file, we can start printing.</p>
+    <img src="images/printing.jpeg" alt="print" width="400" height="500">
+    <p> - Finally, after assembly, the stand is done. The joints however required some filing and sanding in order to fit due to the uneven surface from the print.</p>
+    <img src="images/completechair.jpeg" alt="complete chair" width="400" height="450">
+    <p> - Since the design is based on a folding chair, it naturally folds up.</p>
+    <img src="images/foldedchair.jpeg" alt="folded" width="400" height="450">
+    <p> - Complete! I honestly did not expect for it to work this well, and it proved strong enough to hold up a phone in both vertical and horizontal orientations.</p>
+</div>
+
+</article>
+
+<footer>
+    <div>
+    <p style="text-align:center; background-color:LightBlue; padding:30px;"> Copyright Deon Fabrication 2023©</p>
+    </div>
+</footer>
+
+</body>
+</html>
