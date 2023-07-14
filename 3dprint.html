@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Deon's Fabrication Site</title>
+<title>3D Printing</title>
 <link rel="stylesheet" href="homepage.css">
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
@@ -38,6 +38,30 @@
 
 </nav>
 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
 <article>
 <div>
 <h2>3D printing</h2>
@@ -67,7 +91,9 @@
     <p> - As always, we are going to start modelling in Fusion. One feature we are going to use is "components", where we can work on each part separately.</p>
     <p> - After modelling each component, we can now prepare the model for printing. Using the "Arrange" feature we used in the Laser Cutting assignment, we can lay the components flat for printing, then assemble the parts together once printed.</p>
     <img src="images/chairmodel.png" alt="chair ref" width="900" height="450">
+    <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c997ba81191b4976362?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
     <img src="images/chairarrange.png" alt="chair ref" width="900" height="450">
+    <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99c2bd9ae1c9bbd6bb?mode=embed" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
     <p> - This is the second rendition of the model. The first rendition had ball joints for assembly, but unfortunately did not work as some sockets were covered or caved in. I ended up redesigning the joints to simple peg-and-hole ones, and it proved effective enough once printed.</p>
     
     <h3>Printing</h3>
