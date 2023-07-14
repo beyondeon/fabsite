@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2D CAD</title>
+<link rel="stylesheet" href="homepage.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<html lang="en-UK">
+<body>
+
+<header>
+<h3><b>Deon's Fabrication Site</b></h3>
+<h1 style="text-align:center;">2D CAD</h1>
+</header>
+
+<nav>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href= "fablab.html">Fablab Safety</a>
+        <div class="dropdown">
+            <button class="dropbtn">Topics
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="webpage.html">Website Creation with Github</a>
+              <a href="2dcad.html">2D CAD</a>
+              <a href="3dcad.html">3D CAD</a>
+              <a href="lasercut.html">Laser Cutting</a>
+              <a href="3dprint.html">3D Printing</a>
+              <a href="embed.html">Embed Programming</a>
+            </div>
+          </div>
+        <a href="final.html">Final project</a>
+        <a href="about.html">About</a>
+      </div>
+      
+</nav>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<article>
+    <div>
+        <h2>2D CAD</h2>
+    </div>
+</article>
+
+<footer>
+    <div>
+    <p style="text-align:center; background-color:LightBlue; padding:30px;"> Copyright Deon Fabrication 2023©</p>
+    </div>
+</footer>
+
+</body>
+</html>
