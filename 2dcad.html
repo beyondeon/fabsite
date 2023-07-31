@@ -76,22 +76,55 @@
         <h2>Task 1</h2>
         <p> - For this task, we are supposed to edit a photo of ourselves using GIMP, an image editing program, and use that edited image for the About page of our website. The task is simple, and that will be to remove the background of the image and save it as a PNG with a transparent background.</p>
         <p> - The first thing we will need to do is choose an image we are going to use for our About page. I decided to use this image of myself:</p>
-        <img src="images/sketch.png" alt="goofy aah pic" width="300" height="400">
+        <img src="images/baseimage.jpeg" alt="goofy aah pic" width="300" height="400">
         <p> - After opening GIMP, we shall import the picture to edit it.</p>
         <p> - I shall be following this Youtube tutorial to remove the background.</p>
         <iframe width="1040" height="588" src="https://www.youtube.com/embed/C0tg2mRroSY" title="Gimp: Remove The Background And Make It Transparent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <p> - To summarize, we are first going to use the Free Select tool to select the outline of the main subject, me. Then, using the subtract mode of the tool, we are going to select the areas we need to remove.</p>
         <p> - We then invert the selection, which is now selecting the background. We are going to enable Alpha channel, which allows a transparent background to be made, then delete the background. We should be left with just the subject, and the background should now be gone and replaced with a greyish checkerboard pattern. This indicates that the image now has a transparent background.</p>
         <p> - Instead of saving, we are going to export this edited image. We are going to choose the PNG option, then export it to the desired location. We should now have a PNG that is ready to be used for the page.</p>
+        <img src="images/clearpic.png" alt="goofy aah pic" width="300" height="400">
     </div>
 
     <div>
         <h2>Task 2</h2>
         <p> - For this task, we are going to need to design a logo to use for the webpage and then vectorise it using Inkscape.</p>
-        <p> - As far as logo design went, I decided to use my initials. I drew a couple of designs until I found one satisfactory.</p>
+        <p> - As far as logo design went, I decided to use my initials. I drew a couple of designs until I found one that was satisfactory. I decided on using the one in the middle.</p>
+        <img src="images/logo design.jpeg" alt="logo draft" width="300" height="400">
         <p> - We are now going to import the design into Inkscape. We can take a picture of the design, then import said picture into Inkscape and set it as a base layer. We are going to lower the opacity of that layer, then create a new layer for the vector itself.</p>
-        <p> - To create the vector, we are going to use the Bezier Curve pen. Since my design is largely made of lines, I can select the line setting for the pen.</p>
+        <p> - To create the vector, we are going to use the Bezier Curve pen. This allows us to make vector lines. Since my design is largely made of straight lines, I can select the straight line setting for the pen and start tracing.</p>
         <p> - Using the pen, we are going to trace the entire design. Once done, we now have a vectorized logo! Since I am going to use it as a favicon, I resized it, then exported it as a PNG. We can also save it as a SVG file if we so choose.</p>
+    </div>
+
+    <div>
+        <h2>Exercise 1</h2>
+        <p> - Now, we are going to get into some exercises. We are going to be doing up sketches in Fusion 360.</p>
+        <p> - This is the drawing we are going to replicate:</p>
+        <img src="images/sketch.png" alt="Sketch picture" width="300" height="400">
+        <p> - First, we will click on the "Create Sketch" button, then select a plane to start the sketch on.</p>
+        <p> - Then, we can start sketching. I started with a rectangle. By default, the rectangle is a 2 point one, but by using the "Create" dropdown menu, we can select different types of rectangles. We will be using the center point one here.</p>
+        <img src="images/rectangle.png" alt="rectangle sketch" width="500" height="500">
+        <p> - For sketches, we preferably want them to be fully constrained, usually to the origin. Constraining basically "locks" the sketch, so that the sketch cannot be accidentally altered and is indicated by black lines. Hence, the center point of the rectangle is right smack at the origin. This makes it constrained.</p>
+        <p> - To specify dimensions, you can key in values into the box which appears when you apply an item. For multiple values, you can use [Tab] to alternate between them.</p>
+        <p> - We shall now add the remaining shapes.</p>
+        <img src="images/circles.png" alt="circle sketch" width="500" height="500">
+        <img src="images/guides.png" alt="trimmed sketch" width="500" height="500">
+        <p> - Here, we added some construction lines for the inner rectangle, and trimmed the rectangle and the inside of the outermost circle. Trimming the rectangle however caused the sketch to be unconstrained.</p>
+        <img src="images/complete.png" alt="complete sketch" width="900" height="500">
+        <p> - After adding the final rectangle, we are now done with the sketch! Unfortunately, it is not constrained hence the blue lines, but I am still able to extrude the sketch. This however has the risk of causing issues further down if sudden changes are made, or as Fusion calls it, "downstream failures".</p>
+        <p> - In any case, this exercise is done!</p>
+    </div>
+
+    <div>
+        <h2>Exercise 2</h2>
+        <h2 id="exercise2">Exercise 2</h2>
+        <p> - For this exercise, we are going to draw this spanner looking sketch.</p>
+        <img src="images/spanner.png" alt="spanner sketch" width="800" height="500">
+        <p> - We are going to make the sketch with reference to the one above.</p>
+        <img src="images/spannersketch.png" alt="spanner 360 sketch" width="900" height="500">
+        <p> - This may look complicated, but by breaking down the sketch down to basic shapes and using construction lines, it is very much doable. </p>
+        <p> - To break it down, the sketch first starts off with a circle with a pentagon within. Then, using a construction line, the second circle is made followed by the hexagon within. The circles are then connected with lines, and then the inner shape is drawn.</p>
+        <p> - We can then use the fillet function to round off the parts where the straight line meets the circle.</p>
     </div>
 </article>
 
