@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Creation</title>
+<link rel="stylesheet" href="homepage.css">
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<html lang="en-UK">
+<body>
+
+<header>
+<h3><b>Deon's Fabrication Site</b></h3>
+<h1 style="text-align:center;">Final Project</h1>
+</header>
+
+<nav>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href= "fablab.html">Fablab Safety</a>
+    <div class="dropdown">
+        <button class="dropbtn">Topics
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="webpage.html">Website Creation with Github</a>
+          <a href="2dcad.html">2D CAD</a>
+          <a href="3dcad.html">3D CAD</a>
+          <a href="lasercut.html">Laser Cutting</a>
+          <a href="3dprint.html">3D Printing</a>
+          <a href="embed.html">Embed Programming</a>
+        </div>
+      </div>
+    <a href="final.html">Final project</a>
+    <a href="about.html">About</a>
+  </div>
+
+</nav>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<article>
+    <div>
+        <h1>Final Project</h1>
+        <p> - So we've come close to the end of the module. For our final task, we are supposed to start a project and make something using the skills we have gathered thus far, and document the journey in this site. Without further ado, we shall see how I've managed to complete this project.</p>
+    </div>
+
+    <div>
+        <h2>Coming up with the idea</h2>
+        <p> - First off, we need an idea of what we want to and are going to make. The criterion is straightforward; the project must include things made with what you have learned throughout your time in the module, which are Laser Cutting, 3D Printing and Embedded Programming. But the question is, how are we going to include all this into one package?</p>
+        <p> - So I started coming up with draft ideas. The criterion also included the fact that the project must have some forms of input and output devices, in which there are a variety of. I listed down what was available, including different types of sensors, switches, lights etc. I then decided on which ones to use, mainly lights and some input devices, like sensors and switches.</p>
+        <p> - Once I looked through what had to be used, I started to think of what I wanted to make. I wanted something practical that I can use, or at least be an interactive display piece I find pleasing. One idea that popped into my head at the time was making a Gundam bust statue (a miniature one, of course) since I was watching a series at the time. However, I quickly scrapped the idea after trying to model the head of the bust, as it was too difficult for my skill level. Other ideas included more display pieces but none of them seemed particularly "unique(?)" or "impressive". Some of them also did not fulfil the criteria either.</p>
+        <p> - So after scouring the internet for ideas, I stumbled upon a hollow clock designed by <a href="https://www.instructables.com/member/shiura/">Shiura</a>, a talented designer from Japan who creates all manners of clocks using DFAB techniques. What was surprising was, he kindly uploaded <a href="https://www.instructables.com/Hollow-Clock-4/">instructions</a> and the necessary files required to replicate his project.</p>
+        <p> - Now, I couldn't just rip off his hard work and pass it off as my own, that'd be plagiarism. So, I need to put my own touches to it to make it uniquely mine (I hope). But now, we have decided on what we are going to make, which is the hollow clock! (spoilers, I wasn't the only one who made the same clock, go figure)</p>
+    </div>
+
+    <div>
+        <h2>The Customization Plan</h2>
+        <p> - Now that I've decided on what to make, I now need to customize it and make it unique, add my own touches, if you will. The clock basis by itself already covers the 3D Printing and embedded programming aspect of the project already, so that technically meant that all I had to do was fulfil the Laser Cutting aspect somehow. Don't worry, I also added my own touches to the other two aspects.</p>
+        <p> - The main idea for Laser Cutting I decided to go for was simple, one that I've done before in a previous assignment. Design and cut out a box, and that box will house the base of the hollow clock. Simple and effective. I also had another idea, which I will cover next.</p>
+        <p> - Now, I could've just cut plywood for the box, but I also thought of the other material that I can cut, that being acrylic. That being said, I expanded on that idea. Since acrylic is clear, I thought of using it in tandem with lights to act like a lamp, an acrylic lamp, basically.</p>
+        <p> - So now the general idea is to merge an acrylic lamp with the clock. Simple and practical.</p>
+        <p> - Before I can customize the clock, I need to have it to understand how it works. So, using the files that were available, I printed the components of the clock one by one, over the course of a few sessions. Then, I assembled it for the first time to examine how it all works.</p>
+        <p> - The basic premise as to how the clock works is that the arms are driven by two large gears, which are housed in a frame. To move the arms, you move the gears, which are controlled in the base of the box, which is basically a gearbox containing the motor, electronics and the driver gears.</p>
+        <p> - The original idea was to wedge the acrylic panel in between the gears, then channel the light right through the acrylic. However, that cannot be done, since the gears have to be together in order for the clock to function. So we need to figure out an alternative to this since we cannot interfere with the gears.</p>
+        <p> - The solution is somewhat simple, if the panel can't be inside, then mount it outside. I decided that I'm going to put it on the back of the clock. The light will then be mounted in the gearbox.</p>
+    </div>
+
+    <div>
+        <h2>3D Printing</h2>
+        <p> - For 3D printing, I mainly had to print out the components of the clock that was provided.</p>
+        <p> - As for other components, I modelled up a cover for the acrylic to match the frame of the clock and to encase it.</p>
+        <p> - Since I changed my microcontroller midway into the project from a Arduino Uno to a Nano, I now had to create a mount for the board, since it was uneven due to the pins. I took the dimensions of the board, fired up Fusion and modelled a simple mount for the board. I had to saw off one side of it afterwards for it to fit in the box.</p>
+        <p> - I also made a simple mount for the motor's controller board for it to stand upright while in the box.</p>
+        <p> - To mount the light inside the box, I designed a U-shaped piece to try and hold the Neopixel in place without interfering with the worm gear in the box, since the acrylic panel would be mounted rather close to it.</p>
+    </div>
+
+    <div>
+        <h2>Laser Cutting</h2>
+        <p> - This is the part where I had to </p>
+    </div>
+</article>
+
+
+<footer>
+    <div>
+    <p style="text-align:center; background-color:LightBlue; padding:30px;"> Copyright Deon Fabrication 2023©</p>
+    </div>
+</footer>
+
+</body>
+</html>
