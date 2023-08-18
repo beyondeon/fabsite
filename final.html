@@ -68,7 +68,7 @@
     </div>
 
     <div>
-        <h2>Coming up with the idea</h2>
+        <h2>Coming up with the idea (Ideation)</h2>
         <p> - First off, we need an idea of what we want to and are going to make. The criterion is straightforward; the project must include things made with what you have learned throughout your time in the module, which are Laser Cutting, 3D Printing and Embedded Programming. But the question is, how are we going to include all this into one package?</p>
         <p> - So I started coming up with draft ideas. The criterion also included the fact that the project must have some forms of input and output devices, in which there are a variety of. I listed down what was available, including different types of sensors, switches, lights etc. I then decided on which ones to use, mainly lights and some input devices, like sensors and switches.</p>
         <p> - Once I looked through what had to be used, I started to think of what I wanted to make. I wanted something practical that I can use, or at least be an interactive display piece I find pleasing. One idea that popped into my head at the time was making a Gundam bust statue (a miniature one, of course) since I was watching a series at the time. However, I quickly scrapped the idea after trying to model the head of the bust, as it was too difficult for my skill level. Other ideas included more display pieces but none of them seemed particularly "unique(?)" or "impressive". Some of them also did not fulfil the criteria either.</p>
@@ -89,17 +89,53 @@
     </div>
 
     <div>
-        <h2>3D Printing</h2>
-        <p> - For 3D printing, I mainly had to print out the components of the clock that was provided.</p>
-        <p> - As for other components, I modelled up a cover for the acrylic to match the frame of the clock and to encase it.</p>
-        <p> - Since I changed my microcontroller midway into the project from a Arduino Uno to a Nano, I now had to create a mount for the board, since it was uneven due to the pins. I took the dimensions of the board, fired up Fusion and modelled a simple mount for the board. I had to saw off one side of it afterwards for it to fit in the box.</p>
-        <p> - I also made a simple mount for the motor's controller board for it to stand upright while in the box.</p>
-        <p> - To mount the light inside the box, I designed a U-shaped piece to try and hold the Neopixel in place without interfering with the worm gear in the box, since the acrylic panel would be mounted rather close to it.</p>
+        <h2>Printing the base clock</h2>
+        <p> - So for the very first part of the project, I needed to print out the clock using the files that were graciously provided by Shiura. Due to the number and sizes of the parts, I had to print them all over a couple of sessions.</p>
+        <p> - Once done, I did the first assembly of the clock, following the instructions to properly build up the clock.</p>
+        <p> - Since the clock called for rather specific parts, such as M2 screws and neodymium magnets, I couldn't do a "proper" test with the functions since I didn't have them on hand at the moment, but the gears could move smoothly and that's what matters.</p>
+        <p> - The basic assembly for the clock is done.</p>
     </div>
 
     <div>
-        <h2>Laser Cutting</h2>
-        <p> - This is the part where I had to </p>
+        <h2>Designing and cutting the box base</h2>
+        <p> - This is the part where I had to design the new base of the clock. For this, we shall once again be using Fusion 360.</p>
+        <p> - For the new base of the clock, I wanted something that was still somewhat small so it did not overshadow the clock, so I made some drafts and decided on some dimensions that was suitable for my tastes.</p>
+        <p> - After spending some time modelling, I modelled out the general shape of the box, as well as its features, such as the slots. I had originally considered using living hinges for the rounded corners, but down the line I encountered some issues with it after cutting, so the idea had to be scrapped.</p>
+        <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c9991d6dd57f545199b?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+        
+        <p> - After the model was complete, I used the Arrange function to lay out the parts flat, then projected the models to obtain the sketch I will use for the cutting, in the form of a DXF file. I also decided to do a little laser engraving, and I decided to engrave my logo, which I had saved as an SVG file prior.</p>
+        <p> - Time for the cutting. When I showed up at T11, I found out that the minimum thickness of the plywood that was provided was 3mm and up, and I had foolishly modelled everything with a 2mm thickness. I tried adjusting the thickness with the User Parameters, but that ended up not working. So I had no choice but to cut as is, with the slots at 2mm thickness. I ended up having to file down the slots and finger joints in order for them to fit properly.</p>
+        <p> - So now we have the box ready for use! Unfortunately, as stated above, the living hinges did not work. In fact, the first one I cut immediately snapped when I tried to bend it slightly. This was due to the thickness of the wood that was used, the radius of the curve as well as the gaps between the slats. I even tried cutting a second one but to no avail, with the piece snapping as well. Overall, the hinges did not turn out well and I had to come up with another solution to improvise.</p>
+    </div>
+
+    <div>
+      <h2>The miscallaneous bits</h2>
+      <p> - In addition to the box and clock, I decided to make some components that would aid in the design.</p>
+      <p> - The first one was an Arduino Nano holder / mount. Due to the strange layout of the Arduino pins, I had to find a way for it to be mounted in the box without moving. So, taking some inspiration online, I measured out some dimensions of the board and designed a simple mount on Fusion, then printed it out. I had to do some minor filing and even cut off one side for fitting, but overall it worked like a charm.</p>
+      <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99838dac863d35ca75?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+      
+      <p> - The next one was a holder of sorts for the Neopixel. One of the greatest challenges I had to face was the issue of how to mount the Neopixel within the gearbox in that limited amount of space, and not interfere with the gears. I just came up with a simple U-shaped block design, and used it in the gearbox as intended to hold the light up.</p>
+      <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c997cb92f5b2fc9d3c7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+
+      <p> - Natually, since my project was about combining an acrylic lamp with the clock, I needed a piece of acrylic in my project. I measured the approximate dimensions of the clock's casing, then sketched out a circle and trimmed it appropriately. Using the sketch, I used it for laser cutting and managed to cut the panel out together with the box in the same session.</p>
+      
+     <p> - Now, I didn't just want the acrylic panel just exposed at the back. I decided to hide and enclose it with a panel of its own, like an extension of the clock case. I modelled up the cover with Fusion, printed it out and attached it to the acrylic with glue, before attaching it to the back panel of the clock as well.</p>
+      <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c994ab8e3e45ab0e63d?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+    </div>
+
+    <div>
+      <h2>Programming</h2>
+      <p> - This has one goal: to be able to control the motor for the clock as well as control the Neopixel with the button, and for that we need to merge codes, which is the real challenge. </p>
+      <p> - The codes for the motor were also provided by Shiura, and there were two codes, one test code where the motor runs continuously and the actual clock funtion code, where the clock actually functions like a clock. As for the Neopixel code, I had to source some code, and I managed to find the perfect code on TinkerCAD by a user by the name of Dakcser.</p>
+      <p> - Simply copying and pasting the codes did not work that simply. The main issue that arose was that the button did not activate the light, but the motor could run. After getting some help, I was told that the delay() function in the light code was causing issues, and was told to change it to a millis() function, which worked!</p>
+      <p> - Now here is where it splits up. The clock function works perfectly fine with the merge, but the demo code still had some issues. I decided that I'd go with the actual function code anyways.</p>
+      <p> - Since TinkerCAD does not have a stepper motor to use in the simulation, so I will just put the circuit for the Neopixel here.</p>
+      <iframe width="725" height="453" src="https://www.tinkercad.com/embed/aVTzYk9iBqu?editbtn=1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+    </div>
+
+    <div>
+      <h2>Assembly</h2>
+      <p> - Now, it is just a matter of putting everything together. </p>
     </div>
 </article>
 
