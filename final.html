@@ -67,6 +67,10 @@
         <p> - So we've come close to the end of the module. For our final task, we are supposed to start a project and make something using the skills we have gathered thus far, and document the journey in this site. Without further ado, we shall see how I've managed to complete this project.</p>
     </div>
 
+<div>
+  <img src="images/poster.png" alt="poster" class="poster">
+</div>
+
     <div>
         <h2>Coming up with the idea (Ideation)</h2>
         <p> - First off, we need an idea of what we want to and are going to make. The criterion is straightforward; the project must include things made with what you have learned throughout your time in the module, which are Laser Cutting, 3D Printing and Embedded Programming. But the question is, how are we going to include all this into one package?</p>
@@ -83,10 +87,12 @@
         <p> - The main idea for Laser Cutting I decided to go for was simple, one that I've done before in a previous assignment. Design and cut out a box, and that box will house the base of the hollow clock. Simple and effective. I also had another idea, which I will cover next.</p>
         <p> - Now, I could've just cut plywood for the box, but I also thought of the other material that I can cut, that being acrylic. That being said, I expanded on that idea. Since acrylic is clear, I thought of using it in tandem with lights to act like a lamp, an acrylic lamp, basically.</p>
         <p> - So now the general idea is to merge an acrylic lamp with the clock. Simple and practical.</p>
+        <img src="images/sketch1.jpg" alt="basic sketch" width="1000" height="700">
         <p> - Before I can customize the clock, I need to have it to understand how it works. So, using the files that were available, I printed the components of the clock one by one, over the course of a few sessions. Then, I assembled it for the first time to examine how it all works.</p>
         <p> - The basic premise as to how the clock works is that the arms are driven by two large gears, which are housed in a frame. To move the arms, you move the gears, which are controlled in the base of the box, which is basically a gearbox containing the motor, electronics and the driver gears.</p>
         <p> - The original idea was to wedge the acrylic panel in between the gears, then channel the light right through the acrylic. However, that cannot be done, since the gears have to be together in order for the clock to function. So we need to figure out an alternative to this since we cannot interfere with the gears.</p>
         <p> - The solution is somewhat simple, if the panel can't be inside, then mount it outside. I decided that I'm going to put it on the back of the clock. The light will then be mounted in the gearbox.</p>
+        <img src="images/sketch2.jpg" alt="basic clock" width="1000" height="1500">
     </div>
 
     <div>
@@ -95,6 +101,7 @@
         <p> - Once done, I did the first assembly of the clock, following the instructions to properly build up the clock.</p>
         <p> - Since the clock called for rather specific parts, such as M2 screws and neodymium magnets, I couldn't do a "proper" test with the functions since I didn't have them on hand at the moment, but the gears could move smoothly and that's what matters.</p>
         <p> - The basic assembly for the clock is done.</p>
+        <img src="images/baseclock.jpg" alt="basic clock" width="1000" height="1000">
     </div>
 
     <div>
@@ -105,7 +112,9 @@
         <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99bde49c594b4640c5?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>        
         <p> - After the model was complete, I used the Arrange function to lay out the parts flat, then projected the models to obtain the sketch I will use for the cutting, in the form of a DXF file. I also decided to do a little laser engraving, and I decided to engrave my logo, which I had saved as an SVG file prior.</p>
         <p> - Time for the cutting. When I showed up at T11, I found out that the minimum thickness of the plywood that was provided was 3mm and up, and I had foolishly modelled everything with a 2mm thickness. I tried adjusting the thickness with the User Parameters, but that ended up not working. So I had no choice but to cut as is, with the slots at 2mm thickness. I ended up having to file down the slots and finger joints in order for them to fit properly.</p>
+        <img src="images/cutting.jpg" alt="laser cutting" width="1000" height="700">
         <p> - So now we have the box ready for use! Unfortunately, as stated above, the living hinges did not work. In fact, the first one I cut immediately snapped when I tried to bend it slightly. This was due to the thickness of the wood that was used, the radius of the curve as well as the gaps between the slats. I even tried cutting a second one but to no avail, with the piece snapping as well. Overall, the hinges did not turn out well and I had to come up with another solution to improvise.</p>
+        <img src="images/brokenhinge.jpg" alt="broken hinge" width="1000" height="700">
     </div>
 
     <div>
@@ -114,7 +123,7 @@
       <p> - The first one was an Arduino Nano holder / mount. Due to the strange layout of the Arduino pins, I had to find a way for it to be mounted in the box without moving. So, taking some inspiration online, I measured out some dimensions of the board and designed a simple mount on Fusion, then printed it out. I had to do some minor filing and even cut off one side for fitting, but overall it worked like a charm.</p>
       <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c99838dac863d35ca75?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
       
-      <p> - The next one was a holder of sorts for the Neopixel. One of the greatest challenges I had to face was the issue of how to mount the Neopixel within the gearbox in that limited amount of space, and not interfere with the gears. I just came up with a simple U-shaped block design, and used it in the gearbox as intended to hold the light up.</p>
+      <p> - The next one was a holder of sorts for the Neopixel. One of the greatest challenges I had to face was the issue of how to mount the Neopixel within the gearbox in that limited amount of space, and not interfere with the gears. I just came up with a simple U-shaped block design, and used it in the gearbox as intended to prop the light up.</p>
       <iframe src="https://ichat4102.autodesk360.com/shares/public/SHd38bfQT1fb47330c997cb92f5b2fc9d3c7?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
 
       <p> - Natually, since my project was about combining an acrylic lamp with the clock, I needed a piece of acrylic in my project. I measured the approximate dimensions of the clock's casing, then sketched out a circle and trimmed it appropriately. Using the sketch, I used it for laser cutting and managed to cut the panel out together with the box in the same session.</p>
@@ -141,15 +150,17 @@
       <p> - Now, it is just a matter of putting everything together. Most of the parts should fit nicely such as the wooden pieces, but some parts required minor gluing. </p>
       <p> - The areas that required gluing were the corner pieces, where they had to be glued to the base of the box; the acrylic and its cover, where it had to be attached to the back cover of the clock case. The gearbox and Nano holder were held in place using double sided tape.</p>
       <p> - All that is left is the wiring. I had to fit a lot of wires within a small area, and I had to use jumper wires. Unfortunately, most of the wires were quite long, so the challenge was largely wire management and making everything fit nicely. Since I had two devices, the motor and the light, I needed them to share the singular 5V and GRND pins on the Nano. For this, I soldered two wires together, and connected them to one connector wire. I did this for each pin.
-        Apart from those, I also had to solder wire to the button pins. Since wire interference was an issue, I had to wrap the exposed wires with either wire tape or try to use heat shrink wherever possible. I also faced some Arduino issues, but those were quickly resolved.
+        Apart from those, I also had to solder wire to the button pins. Since wire interference was an issue, I had to wrap the exposed wires with either wire tape or try to use heat shrink wherever possible. I had accidentally fried an Arduino prior because I had accidentally switched the 5V and GRND wires around and had to get it replaced.
       </p>
+      <p> - After all that's said and done, I just put everything in the box, tried to neaten the wiring and closed the lid. The first attempt had some issues, but that boiled down to an Arduino fault. After getting a fresh one, it finally worked!</p>
+      <img src="images/circuit.jpg" alt="box" width="1000" height="950">
     </div>
 
     <div>
       <h2>Video</h2>
       <iframe width="1300" height="570" src="https://www.youtube.com/embed/7UGBh8MHGSo" title="EP1000 vid" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-    
+
 </article>
 
 
